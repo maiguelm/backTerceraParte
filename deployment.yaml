@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ejemplo-express-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ejemplo-express
+  template:
+    metadata:
+      labels:
+        app: ejemplo-express
+    spec:
+      containers:
+      - name: ejemplo-express
+        image: recursosbackend_adoptme
+        ports:
+        - containerPort: 3000
+
