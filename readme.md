@@ -49,16 +49,16 @@ Inicia el servidor con los comandos "npm start" o "npm run dev"
 
 
 Se deben realizar las siguientes consultas via Postman:
-GET: http://localhost:<your-port>/api/mocks/mockingpets?num=100 -- A los fines de obtener mascotas. Si no se indica un numero, por defecto se obtendrán 100.-
+GET: http://localhost:"your-port"/api/mocks/mockingpets?num=100 -- A los fines de obtener mascotas. Si no se indica un numero, por defecto se obtendrán 100.-
 
 ![alt text](src/public/img/pets1.png)
 ![alt text](src/public/img/pets2.png)
 
-GET: http://localhost:<your-port>/api/mocks/mockingusers?num=50 -- A los fines de obtener usuarios. Si no se indica un numero, por defecto se obtendrán 50.-
+GET: http://localhost:"your-port"/api/mocks/mockingusers?num=50 -- A los fines de obtener usuarios. Si no se indica un numero, por defecto se obtendrán 50.-
 ![alt text](src/public/img/users.png)
 ![alt text](src/public/img/users2.png)
 
-POST: http://localhost:<your-port>/api/mocks/generateData -- Se generara la data para guardarla en la base de datos.-
+POST: http://localhost:"your-port"/api/mocks/generateData -- Se generara la data para guardarla en la base de datos.-
 El cuerpo de esta ultima peticion es el siguiente (los numeros son a modo de ejemplo):
 {
 	"users": 15,
