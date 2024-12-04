@@ -1,7 +1,8 @@
 class MocksRepository {
-    constructor(usersDao, petsDao) {
+    constructor(usersDao, petsDao, adoptionsDao) {
         this.usersDao = usersDao;
         this.petsDao = petsDao;
+        this.adoptionsDao = adoptionsDao; // Nuevo DAO para las adopciones
     }
 
     async saveUsers(users) {
@@ -10,6 +11,10 @@ class MocksRepository {
 
     async savePets(pets) {
         return Promise.all(pets.map(pet => this.petsDao.save(pet)));
+    }
+
+    async saveAdoptions(adoptions) {
+        return Promise.all(adoptions.map(adoption => this.adoptionsDao.save(adoption)));  // Guardar las adopciones
     }
 }
 

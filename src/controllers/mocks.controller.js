@@ -15,8 +15,8 @@ const getMockPets = async (req, res) => {
 const generateAndSaveData = async (req, res) => {
     const { users, pets } = req.body;
     try {
-        const { savedUsers, savedPets } = await mocksService.saveMockData(users, pets);
-        res.send({ status: 'success', message: 'Data generated successfully', users: savedUsers, pets: savedPets });
+        const { savedUsers, savedPets, savedAdoptions } = await mocksService.saveMockData(users, pets);
+        res.send({ status: 'success', message: 'Data generated successfully', users: savedUsers, pets: savedPets, adoptions: savedAdoptions });
     } catch (error) {
         console.log(error.message);
         res.status(500).send({ status: 'error', error: 'Failed to generate data' });
