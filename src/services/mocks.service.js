@@ -43,18 +43,16 @@ const generateMockPets = (num) => {
 const generateMockAdoptions = (users, pets) => {
     const adoptions = [];
 
-    // Generar adopciones aleatorias: asignar 15 mascotas a 5 usuarios
     const usersCount = Math.min(5, users.length);
     const petsCount = Math.min(15, pets.length);
 
     for (let i = 0; i < petsCount; i++) {
-        const user = users[i % usersCount]; // Selecciona usuarios de forma cíclica
-        const pet = pets[i]; // Selecciona mascotas de manera secuencial
+        const user = users[i % usersCount]; 
+        const pet = pets[i]; 
 
-        // Verificar que la mascota no esté ya adoptada
         if (!pet.adopted) {
             pet.adopted = true;
-            user.pets.push(pet._id); // Asigna la mascota al usuario
+            user.pets.push(pet._id); 
 
             adoptions.push({
                 user: user._id,
@@ -74,10 +72,8 @@ const saveMockData = async (usersCount, petsCount) => {
     const mockPets = generateMockPets(petsCount);
     const savedPets = await mocksRepository.savePets(mockPets);
 
-    // Generar adopciones
     const adoptions = generateMockAdoptions(savedUsers, savedPets); //agregado
 
-    // Aquí deberías agregar el DAO para guardar las adopciones
     const savedAdoptions = await mocksRepository.saveAdoptions(adoptions); //agregado
 
     return { savedUsers, savedPets, savedAdoptions };

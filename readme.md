@@ -1,6 +1,6 @@
 # Proyeto de Backend, Tercera Parte, del curso de CoderHouse: Programación Backend III: Testing y Escalabilidad Backend
 
-Preentrega de la tercera parte del proyecto del Curso de Programacion Backend de CoderHouse. Se trata de un pequeño proyecto sobre usuarios y mascotas, proporcionado por Coderhouse, para pdoer realizar distintas actividades teniendtes al aprendizaje de Node, Express, Docker y demás herramientas del curso mencionado.-
+Entrega final de la tercera parte del proyecto del Curso de Programacion Backend de CoderHouse. Se trata de un pequeño proyecto sobre usuarios y mascotas, proporcionado por Coderhouse, para pdoer realizar distintas actividades teniendtes al aprendizaje de Node, Express, Docker y demás herramientas del curso mencionado.-
 
 ## Tabla de Contenidos
 
@@ -15,6 +15,7 @@ Preentrega de la tercera parte del proyecto del Curso de Programacion Backend de
 - Creacion de Usuarios
 - Creacion de Mascotas
 - Guardado de datos en la Base de Datos de MongoDB
+- Documentacion mediante Swagger
 
 
 ## Tecnologías Utilizadas
