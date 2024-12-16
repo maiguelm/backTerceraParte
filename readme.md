@@ -8,15 +8,14 @@ Entrega final de la tercera parte del proyecto del Curso de Programacion Backend
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Instalación](#instalación)
 - [Uso](#uso)
-- [Contribución](#contribución)
+- [Docker](#docker)
 
 ## Características
 
 - Creacion de Usuarios
 - Creacion de Mascotas
 - Guardado de datos en la Base de Datos de MongoDB
-- Documentacion mediante Swagger
-
+- Documentacion mediante Swagger: se ha documentado el router de usuarios y el de pets mediante swagger. Para ello, se debe inngresar a la ruta http://localhost:YOUR_PORT/api-docs/users o http://localhost:YOUR_PORT/api-docs/pets
 
 ## Tecnologías Utilizadas
 
@@ -26,7 +25,8 @@ Entrega final de la tercera parte del proyecto del Curso de Programacion Backend
   - MongoDB (Mongoose)
   - Passport.js (JWT)
   - @faker-js/faker
- 
+
+  - Docker
 
 ## Instalación
 
@@ -75,3 +75,7 @@ El formato de la misma debe ser JSON
 Resultados en la base de datos de MONGODB
 ![alt text](src/public/img/mongo1.png)
 ![alt text](src/public/img/mongo2.png)
+
+## Docker
+Hay una imagen del proyecto en Docker Hub, a la que se puede acceder mediante este enlace:
+https://hub.docker.com/repository/docker/migmoyano/entrega-final/general
